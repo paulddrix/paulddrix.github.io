@@ -1,0 +1,25 @@
+{
+  "name": "paulddrix",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://paulddrix@bitbucket.org/paulddrix/paulddrix.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Paul Diederichs",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/paulddrix/paulddrix#readme",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "express-handlebars": "^3.0.0",
+    "handyutils": "^2.0.1"
+  }
+}
