@@ -7,21 +7,26 @@
     <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
     <title>Paul Diederichs</title>
-<link rel="apple-touch-icon" sizes="180x180" href="/public/images/apple-touch-icon.png">
-<link rel="icon" type="/image/png" href="/public/images/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="/image/png" href="/public/images/favicon-16x16.png" sizes="16x16">
-<link rel="manifest" href="/public/images/manifest.json">
-<link rel="mask-icon" href="/public/images/safari-pinned-tab.svg" color="#07c731">
-<link rel="shortcut icon" href="/public/images/favicon.ico">
-<meta name="msapplication-config" content="/public/images/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
-<style media="screen">
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/images/apple-touch-icon.png">
+    <link rel="icon" type="/image/png" href="/public/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="/image/png" href="/public/images/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/public/images/manifest.json">
+    <link rel="mask-icon" href="/public/images/safari-pinned-tab.svg" color="#07c731">
+    <link rel="shortcut icon" href="/public/images/favicon.ico">
+    <meta name="msapplication-config" content="/public/images/browserconfig.xml">
+    <meta name="theme-color" content="#CCCCCC">
+    <style media="screen">
 
+  /* colors:
+      purple:#800080
+      blue: #0080FF
+
+  */
 /*
 Stylesheet: Base Mobile Stylesheet
 */
 html {
-  background-color: #202020;
+  background-color: #CCCCCC;
 }
 
 /*
@@ -40,7 +45,7 @@ body {
 H1, H2, H3, H4, H5 STYLES
 */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-  color: rgba(0, 255, 0, 0.5);
+  color: #0080FF;
   font-weight: 500;
   /*
   if you're going to use webfonts, be sure to check your weights
@@ -67,7 +72,7 @@ NAVIGATION STYLES
 **/
 nav {
   overflow: hidden;
-  background: #202030;
+  background: #0080FF;
   text-align: center;
   position: fixed;
   top: 0;
@@ -89,12 +94,15 @@ nav a svg {
   float: left;
 }
 nav a:link, nav a:visited {
-  color: rgba(0, 255, 0, 0.5);
+  color: #0080FF;
 }
-    nav a:nth-child(n+2):hover svg path, nav a:nth-child(n+2):hover svg polygon, nav a:nth-child(n+2):hover svg rect, nav a:nth-child(n+2):hover span {
-      fill: #1FDB1F;
+nav a:nth-child(n+2):hover svg path,
+nav a:nth-child(n+2):hover svg polygon,
+nav a:nth-child(n+2):hover svg rect,
+nav a:nth-child(n+2):hover span {
+      fill: #800080;
       cursor: pointer;
-      color: #1FDB1F; }
+      color: #800080; }
 
 /*
 BELOWNAV
@@ -110,31 +118,35 @@ CONTENT STYLES
 .content {
   margin-top: 3%;
   padding: 2%;
-  color: #EBEBEB; }
+  color: #000033; }
   .content video {
     width: 100%; }
 
 .content ul {
-  margin-left: 3%; }
+  margin-left: 3%;
+}
 .content ul li {
     list-style: none;
 }
 .content li:before {
   content: "• ";
-  color: green; }
+  color: #0080FF; }
 
 #portPieces {
   overflow: hidden;
-  clear: both; }
+  clear: both;
+}
 
 #projects {
   overflow: hidden;
-  clear: both; }
+  clear: both;
+}
 
 a.download {
-  color: rgba(0, 255, 0, 0.5); }
+  color: #0080FF;
+}
 a.download:hover{
-  color: rgb(0, 255,0);
+  color: #800080;
 }
 
 /*
@@ -144,10 +156,12 @@ Projects
   width: 30%;
   margin: 1.6%;
   text-align: center;
-  border: solid #EBEBEB 1px;
-  float: left; }
+  border: solid #CCCCCC 1px;
+  float: left;
+}
   .projects:hover {
-    border: solid rgba(0, 255, 0, 0.5) 1px; }
+    border: solid green 1px;
+  }
 
 .demoLink {
   width: 125px;
@@ -155,23 +169,27 @@ Projects
   display: block;
   padding: 10px;
   text-align: center;
-  border: solid #EBEBEB 1px; }
-  .demoLink:hover {
-    border: solid #1FDB1F 1px;
-    background-color: #1FDB1F;
-    color: #EBEBEB; }
+  border: solid #0080FF 1px;
+}
+.demoLink:hover {
+  border: solid #800080 1px;
+  background-color: #800080;
+  color: #CCCCCC;
+}
 
 .projectCont {
-  border-bottom: solid #ebebeb 2px;
+  border-bottom: solid #CCCCCC 2px;
   width: 90%;
   margin: 20px auto;
   background-color: transparent; }
   .projectCont img {
     margin: 0 42%;
-    clear: both; }
+    clear: both;
+  }
   .projectCont section a {
     text-decoration: none;
-    color: rgba(0, 255, 0, 0.5); }
+    color: #0080FF;
+   }
 
 .tools svg {
   height: 67.125px; }
@@ -382,7 +400,7 @@ about div
             <svg x="0px" y="0px" width="40.079px" height="34px" viewBox="0 0 40.079 34">
             <polygon fill="#000" points="10.02,34 0,17 10.02,0 30.059,0 40.079,17 30.059,34 "/>
             <g>
-            	<path fill="#1FDB1F" d="M16.167,18.606c0,0.547-0.069,1.049-0.208,1.507c-0.14,0.459-0.341,0.853-0.604,1.182
+            	<path fill="#800080" d="M16.167,18.606c0,0.547-0.069,1.049-0.208,1.507c-0.14,0.459-0.341,0.853-0.604,1.182
             		c-0.263,0.33-0.585,0.587-0.966,0.773c-0.381,0.186-0.814,0.278-1.298,0.278c-0.381,0-0.716-0.046-1.005-0.139
             		c-0.288-0.092-0.504-0.196-0.649-0.309v2.828h-1.283v-9.506c0.279-0.082,0.637-0.165,1.074-0.247
             		c0.439-0.082,0.941-0.124,1.508-0.124c0.515,0,0.984,0.087,1.406,0.263c0.423,0.175,0.782,0.425,1.082,0.75
@@ -390,10 +408,10 @@ about div
             		c-0.391-0.459-0.902-0.688-1.53-0.688c-0.351,0-0.626,0.016-0.828,0.047c-0.201,0.031-0.359,0.067-0.472,0.108v4.529
             		c0.145,0.134,0.356,0.257,0.634,0.37c0.278,0.114,0.567,0.17,0.865,0.17c0.341,0,0.631-0.067,0.874-0.201
             		c0.242-0.134,0.44-0.317,0.595-0.548c0.155-0.232,0.268-0.505,0.34-0.82C14.817,19.32,14.854,18.977,14.854,18.606z"/>
-            	<path fill="#EBEBEB" d="M19.723,21.342c0,0.278-0.093,0.52-0.278,0.726c-0.186,0.206-0.439,0.309-0.759,0.309
+            	<path fill="#CCCCCC" d="M19.723,21.342c0,0.278-0.093,0.52-0.278,0.726c-0.186,0.206-0.439,0.309-0.759,0.309
             		s-0.571-0.103-0.757-0.309c-0.185-0.206-0.278-0.448-0.278-0.726c0-0.278,0.093-0.52,0.278-0.726
             		c0.186-0.206,0.438-0.309,0.757-0.309s0.572,0.103,0.759,0.309C19.63,20.822,19.723,21.064,19.723,21.342z"/>
-            	<path fill="#EBEBEB" d="M28.843,21.914c-0.206,0.062-0.444,0.121-0.711,0.178c-0.269,0.057-0.55,0.106-0.843,0.147
+            	<path fill="#CCCCCC" d="M28.843,21.914c-0.206,0.062-0.444,0.121-0.711,0.178c-0.269,0.057-0.55,0.106-0.843,0.147
             		c-0.294,0.042-0.593,0.075-0.897,0.101c-0.304,0.026-0.595,0.038-0.873,0.038c-0.67,0-1.268-0.097-1.794-0.293
             		c-0.525-0.196-0.969-0.477-1.328-0.843c-0.361-0.365-0.637-0.809-0.828-1.329c-0.19-0.521-0.286-1.106-0.286-1.755
             		c0-0.659,0.082-1.254,0.248-1.785c0.165-0.531,0.401-0.982,0.711-1.353c0.309-0.371,0.688-0.654,1.136-0.85
@@ -406,7 +424,7 @@ about div
             </svg>
           </a>
             <a href="#projects" title="Projects">
-                <svg viewBox="0 0 44.9 44.9" width="40" fill="#EBEBEB">
+                <svg viewBox="0 0 44.9 44.9" width="40" fill="#CCCCCC">
                     <rect x="2.5" y="2.5" width="12" height="12" />
                     <rect x="16.5" y="2.5" width="12" height="12" />
                     <rect x="30.5" y="2.5" width="12" height="12" />
@@ -419,7 +437,7 @@ about div
                 </svg>
             </a>
             <a href="https://github.com/paulddrix" target="_blank">
-                <svg viewBox="0 0 35.886 35" width="40" fill="#EBEBEB">
+                <svg viewBox="0 0 35.886 35" width="40" fill="#CCCCCC">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M17.942,0C8.034,0,0,8.034,0,17.944
       c0,7.927,5.141,14.651,12.271,17.024c0.897,0.165,1.225-0.389,1.225-0.864c0-0.426-0.016-1.555-0.024-3.052
       c-4.991,1.084-6.044-2.405-6.044-2.405c-0.816-2.073-1.992-2.625-1.992-2.625c-1.629-1.113,0.123-1.091,0.123-1.091
@@ -432,7 +450,7 @@ about div
                 </svg>
             </a>
             <a href="mailto:pauldiederichs95@gmail.com">
-                <svg viewBox="0 0 46.5 45.4" width="40" fill="#EBEBEB">
+                <svg viewBox="0 0 46.5 45.4" width="40" fill="#CCCCCC">
                     <path d="M22.9,16.9c0-2.6-1.5-6.6-4.5-6.6c-0.9,0-1.9,0.5-2.5,1.2c-0.6,0.8-0.8,1.7-0.8,2.7c0,2.4,1.4,6.4,4.5,6.4
       		c0.9,0,1.9-0.4,2.4-1C22.8,18.7,22.9,17.6,22.9,16.9z" />
                     <path d="M21,26.4c-0.3,0-0.5,0-0.8,0c-0.3,0-2.3,0.1-3.8,0.6c-0.8,0.3-3.1,1.1-3.1,3.7c0,2.5,2.5,4.4,6.3,4.4
@@ -450,9 +468,43 @@ about div
           <!-- Start belowNav -->
           <div class="content">
             <img src="/public/images/paul_cropped.jpg" alt="portrait picture">
-            <h1>I am <span style="font-family: 'Ubuntu Mono', monospace">paul.</span><span style="font-family: 'Ubuntu Mono', monospace; color:#EBEBEB"><u>d</u>drix</span>,<br> Full Stack developer.</h1>
+            <h1>I am <span style="font-family: 'Ubuntu Mono', monospace">Paul Diederichs(</span><span style="font-family: 'Ubuntu Mono', monospace; color:#800080"><u>d</u>drix</span>),<br> Full Stack developer.</h1>
             <p>
               Always looking forward to helping others learn and learn from others.
+            </p>
+          </div>
+          <div class="content">
+            <h2>Revelations from Adonay</h2>
+            <h4>First revelation</h4>
+            <p>
+              For those who are athiest, or agnostic or egotist  or anyone who does not believe there is one creator, because of the world that we live in today.
+              As I once was, Adonay showed me that it was not the fault of the creador but the creation that did not follow the commandments, orders, and solemnities that Adonay declared.
+
+            </p>
+            <p>
+              As a web developer, we are tasked to create a system that works correctly, accomplishing it's purpose.
+              We create instructions for our users to follow them so that the system runs smooth and there are not errors or problems that rise up.
+            </p>
+            <p>
+              However, when the users do not follow the instructions given by the developer, and problems arise, whose fault is it? the developer or the user?
+              In the same principle, if we the creation do not follow the instructionsof the creator, problems will arise, and it is our fault not the creator's.
+            </p>
+            <h4>Second revelation</h4>
+            <p>
+              When reading what is commonly known as "The new testament", we are often presented with some principles that are difficult to understand, if there the context is not set first.
+
+            </p>
+            <p>
+              Historical, cultural, geographical context is all necessary to understand these principles, the words father and son do not have the same connotation in english as it does in aramaic, thus opening the door to misinterpretations of the sacred text.
+            </p>
+            <p>
+              The father, the creator, the origin, dimish himself to enter this world, this creation as a son, which should be seen as the carrier of the inheritance, this is by Yehoshua(wrongly known as jesus) was not human, he is the creator.
+            </p>
+            <p>
+              The father, came down to give exmaple to his children of how to behave, following his own words, that is why he is called the messiah(HaMashiaj), the anointed one,for he is the most subjected to his word.
+            </p>
+            <p>
+              May the creator, Yehoshúa' HaMashiaj, bless you with his peace(shalom).
             </p>
           </div>
           <div class="content">
