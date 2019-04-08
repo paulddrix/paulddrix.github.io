@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
-    <title>Paul Diederichs</title>
-    <link rel="shortcut icon" href="/public/images/favicon.ico">
-    <meta name="theme-color" content="#CCCCCC">
-    <style media="screen">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+  <title>Paul Diederichs</title>
+  <!-- Icons -->
+  <link href="/public/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
+
+  <link rel="shortcut icon" href="/public/images/favicon.ico">
+  <meta name="theme-color" content="#CCCCCC">
+  <style media="screen">
 
   /* colors:
       purple:#800080
@@ -20,7 +23,7 @@
 Stylesheet: Base Mobile Stylesheet
 */
 html {
-  background-color: #CCCCCC;
+  background-color: #EBEBEB !important;
 }
 
 /*
@@ -30,10 +33,8 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-size: 100%;
   line-height: 1.5;
-}
-#wrapper {
-  max-width: 1038px;
-  margin: 0 auto;
+  background-color: #EBEBEB !important;
+  color: #000033 !important;
 }
 /*
 H1, H2, H3, H4, H5 STYLES
@@ -65,27 +66,11 @@ h3, .h3 {
 NAVIGATION STYLES
 **/
 nav {
-  overflow: hidden;
   background: #0080FF;
-  text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 48px;
-  padding: 5px;
 }
 nav a {
-    text-align: center;
-    margin-left: 10px;
-    display: inline-block;
-    line-height: 48px;
-    height: 48px;
-    text-decoration: none;
-  }
-nav a svg {
-  margin-top: 5px;
-  float: left;
+  margin-left: 10px;
+  text-decoration: none;
 }
 nav a:link, nav a:visited {
   color: #0080FF;
@@ -94,47 +79,28 @@ nav a:nth-child(n+2):hover svg path,
 nav a:nth-child(n+2):hover svg polygon,
 nav a:nth-child(n+2):hover svg rect,
 nav a:nth-child(n+2):hover span {
-      fill: #800080;
-      cursor: pointer;
-      color: #800080; }
+  fill: #800080;
+  cursor: pointer;
+  color: #800080;
+}
 
-/*
-BELOWNAV
-*/
-#belowNav {
-  max-width: 1338px;
-  width: 98%;
-  margin: 100px auto;
+.text-purple{
+  color:#800080;
+}
+.bg-purple{
+  background-color: #800080;
+}
+.badge-pink{
+  color:#000033;
+  background-color:pink;
+}
+.badge-purple{
+  color:#EBEBEB;
+  background-color:#800080;
 }
 /*
 CONTENT STYLES
 */
-.content {
-  margin-top: 3%;
-  padding: 2%;
-  color: #000033; }
-  .content video {
-    width: 100%; }
-
-.content ul {
-  margin-left: 3%;
-}
-.content ul li {
-    list-style: none;
-}
-.content li:before {
-  content: "• ";
-  color: #0080FF; }
-
-#portPieces {
-  overflow: hidden;
-  clear: both;
-}
-
-#projects {
-  overflow: hidden;
-  clear: both;
-}
 
 a.download {
   color: #0080FF;
@@ -143,193 +109,6 @@ a.download:hover{
   color: #800080;
 }
 
-/*
-Projects
-*/
-.projects {
-  width: 30%;
-  margin: 1.6%;
-  text-align: center;
-  border: solid #CCCCCC 1px;
-  float: left;
-}
-  .projects:hover {
-    border: solid green 1px;
-  }
-
-.demoLink {
-  width: 125px;
-  margin: 5px auto 40px;
-  display: block;
-  padding: 10px;
-  text-align: center;
-  border: solid #0080FF 1px;
-}
-.demoLink:hover {
-  border: solid #800080 1px;
-  background-color: #800080;
-  color: #CCCCCC;
-}
-
-.projectCont {
-  border-bottom: solid #CCCCCC 2px;
-  width: 90%;
-  margin: 20px auto;
-  background-color: transparent; }
-  .projectCont img {
-    margin: 0 42%;
-    clear: both;
-  }
-  .projectCont section a {
-    text-decoration: none;
-    color: #0080FF;
-   }
-
-.tools svg {
-  height: 67.125px; }
-
-/*
-about div
-*/
-#about {
-  overflow: hidden; }
-  #about img {
-    max-width: 100%;
-    max-height: 100%;
-    margin: 1.6%;
-    float: left; }
-  #about p {
-    font-size: 0.875em;
-    width: 60%; }
-
-@media only screen and (min-width: 320px) and (max-width: 490px) {
-  /*
-  Stylesheet: 320px to 490px Stylesheet
-  */
-  /* BelowNav */
-  #belowNav {
-    margin: 18% auto; }
-
-  .content h2 {
-    text-align: center; }
-
-  /* about */
-  #about {
-    overflow: hidden; }
-    #about h2 {
-      text-align: center; }
-    #about img {
-      max-width: 100%;
-      max-height: 100%;
-      border-radius: 10px;
-      margin: 0 10%;
-      float: none; }
-    #about p {
-      font-size: 0.875em;
-      width: 98%;
-      float: none;
-      margin: 0 5%; }
-
-  /*  portfolio */
-  #portPieces h2 {
-    text-align: center; }
-  #portPieces .projects {
-    float: none;
-    width: 98%; } }
-@media only screen and (min-width: 491px) and (max-width: 599px) {
-  /*
-  Stylesheet: 491px to 599px
-  */
-
-  /* BelowNav */
-  #belowNav {
-    margin: 14% auto; }
-
-  .content h2 {
-    text-align: center; }
-
-  /* about */
-  #about {
-    overflow: hidden; }
-    #about h2 {
-      text-align: center; }
-    #about img {
-      max-width: 100%;
-      max-height: 100%;
-      border-radius: 10px;
-      margin: 0 25%;
-      float: none; }
-    #about p {
-      font-size: 0.875em;
-      width: 98%;
-      float: none;
-      margin: 0 1%; }
-
-  /*  portfolio */
-  #portPieces h2 {
-    text-align: center; }
-  #portPieces .projects {
-    float: none;
-    width: 98%; } }
-@media only screen and (min-width: 600px) and (max-width: 766px) {
-  /*
-  Stylesheet: 600px to 766px Stylesheet
-  */
-
-  /* BelowNav */
-  #belowNav {
-    margin: 10% auto; }
-
-  .content h2 {
-    text-align: center; }
-
-  /* about */
-  #about {
-    overflow: hidden; }
-    #about h2 {
-      text-align: center; }
-    #about img {
-      max-width: 100%;
-      max-height: 100%;
-      border-radius: 10px;
-      margin: 0 25%;
-      float: none; }
-    #about p {
-      font-size: 0.875em;
-      width: 98%;
-      float: none;
-      margin: 0 1%; }
-
-  /*  portfolio projects on Home page */
-  #portPieces h2 {
-    text-align: center; }
-  #portPieces .projects {
-    float: none;
-    width: 98%; } }
-@media only screen and (min-width: 767px) and (max-width: 1024px) {
-  /*
-  Stylesheet: 768px to 1024px Stylesheet
-  */
-
-  /*
-  BELOWNAV
-  */
-  #belowNav {
-    max-width: 1338px;
-    width: 79%;
-    margin: 0 ; } }
-@media only screen and (min-width: 1025px) {
-  /*
-  Stylesheet: min 1025px
-  */
-
-  /*
-  BELOWNAV
-  */
-  #belowNav {
-    max-width: 1338px;
-    width: 98%; }
-  }
 @media print {
   /*
   Stylesheet: Print Stylesheet
@@ -382,15 +161,19 @@ about div
   .wp-prev-next,
   .respond-form,
   nav {
-    display: none; } }
+    display: none;
+    }
+  }
 
 </style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
 </head>
 <body>
-    <div id="wrapper">
-        <!-- Start Wrapper -->
-        <nav>
-          <a href="/" title="home">
+        <!-- Nav bar -->
+        <nav class="navbar sticky-top navbar-expand-lg justify-content-center h-auto">
+          <a href="/" title="home" >
             <svg x="0px" y="0px" width="40.079px" height="34px" viewBox="0 0 40.079 34">
             <polygon fill="#CCCCCC" points="10.02,34 0,17 10.02,0 30.059,0 40.079,17 30.059,34 "/>
             <g>
@@ -417,7 +200,7 @@ about div
             </g>
             </svg>
           </a>
-            <a href="#projects" title="Projects">
+          <a href="#projects" title="Projects" class="nav-item">
                 <svg viewBox="0 0 44.9 44.9" width="40" fill="#CCCCCC">
                     <rect x="2.5" y="2.5" width="12" height="12" />
                     <rect x="16.5" y="2.5" width="12" height="12" />
@@ -430,9 +213,9 @@ about div
                     <rect x="30.5" y="30.5" width="12" height="12" />
                 </svg>
             </a>
-            <a href="https://github.com/paulddrix" target="_blank">
-                <svg viewBox="0 0 35.886 35" width="40" fill="#CCCCCC">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.942,0C8.034,0,0,8.034,0,17.944
+          <a href="https://github.com/paulddrix" target="_blank" class="nav-item">
+            <svg viewBox="0 0 35.886 35" width="40" fill="#CCCCCC">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M17.942,0C8.034,0,0,8.034,0,17.944
       c0,7.927,5.141,14.651,12.271,17.024c0.897,0.165,1.225-0.389,1.225-0.864c0-0.426-0.016-1.555-0.024-3.052
       c-4.991,1.084-6.044-2.405-6.044-2.405c-0.816-2.073-1.992-2.625-1.992-2.625c-1.629-1.113,0.123-1.091,0.123-1.091
       c1.801,0.127,2.749,1.85,2.749,1.85c1.601,2.741,4.199,1.95,5.222,1.49c0.163-1.159,0.626-1.95,1.139-2.398
@@ -442,8 +225,8 @@ about div
       c0,6.894-4.195,8.41-8.192,8.854c0.644,0.554,1.218,1.648,1.218,3.322c0,2.399-0.022,4.334-0.022,4.923
       c0,0.479,0.323,1.038,1.233,0.862c7.124-2.377,12.26-9.098,12.26-17.022C35.886,8.034,27.852,0,17.942,0z" />
                 </svg>
-            </a>
-            <a href="mailto:pauldiederichs95@gmail.com">
+          </a>
+          <a href="mailto:pauldiederichs95@gmail.com" class="nav-item">
                 <svg viewBox="0 0 46.5 45.4" width="40" fill="#CCCCCC">
                     <path d="M22.9,16.9c0-2.6-1.5-6.6-4.5-6.6c-0.9,0-1.9,0.5-2.5,1.2c-0.6,0.8-0.8,1.7-0.8,2.7c0,2.4,1.4,6.4,4.5,6.4
       		c0.9,0,1.9-0.4,2.4-1C22.8,18.7,22.9,17.6,22.9,16.9z" />
@@ -458,17 +241,21 @@ about div
             </a>
         </nav>
 
-        <div id="belowNav">
-          <!-- Start belowNav -->
-          <div class="content">
+        <div class="container-fluid">
+          <!-- Greeting -->
+          <div class="container">
             <img src="/public/images/paul_cropped.jpg" alt="portrait picture" width="250px">
-            <h1>I am <span style="font-family: 'Ubuntu Mono', monospace">Paul Diederichs(</span><span style="font-family: 'Ubuntu Mono', monospace; color:#800080"><u>d</u>drix</span>),<br> Full Stack developer.</h1>
-            <p>
+            <h2>I am <span style="font-family: 'Ubuntu Mono', monospace">Paul Diederichs(</span><span style="font-family: 'Ubuntu Mono', monospace; color:#800080"><u>d</u>drix</span>),<br> Full Stack developer.</h2>
+            <!-- <p>
               Always looking forward to helping others learn and learn from others.
-            </p>
+            </p> -->
+            <div class="alert alert-info" role="alert">
+              Always looking forward to helping others learn and learn from others.
+            </div>
           </div>
-          <div class="content">
-            <h2>Revelations from Adonay</h2>
+          <!-- Revelations -->
+          <div class="container">
+            <h3>Revelations from Adonay</h3>
             <h4>First revelation</h4>
             <p>
               For those who are athiest, or agnostic or egotist or anyone who does not believe there is one creator, because of the world that we live in today.
@@ -500,224 +287,237 @@ about div
               May the creator, Yehoshúa' HaMashiaj, bless you with his peace(shalom) amen.
             </p>
           </div>
-          <div class="content">
+          <!-- Resume -->
+          <div class="container">
             <h2>Quick Resume</h2>
-            <hr />
-            <h3>Professional Capabilities</h3>
-            <ul>
-              <li>Modular, reusable code.</li>
-              <li>Semantic HTML</li>
-            </ul>
-            <h3>Technical Skills</h3>
-            <ul>
-              <li>Adobe Illustrator</li>
-              <li>HTML, CSS, SASS.</li>
-              <li>Javascript, jQuery, AngularJS.</li>
-              <li>Python, MongoDB, Nodejs, Express, Flask.</li>
-              <li>Mac OS, Windows, Linux.</li>
+            <ul class="list-group">
+              <li class="list-group-item font-weight-bold" style="background-color:#0080FF;color:#EBEBEB">Soft Skills</li>
+              <li class="list-group-item">Self motivated and organized.</li>
+              <li class="list-group-item">Communicates effectively in English and Spanish, especially using email and IRC.</li>
+              <li class="list-group-item">Willing ask others for assistance to reduce delays in solving difficult problems.</li>
+              <li class="list-group-item">Able to take ownership of unfamiliar tasks and problems and see them through to completion.</li>
+              <li class="list-group-item font-weight-bold" style="background-color:#800080;color:#EBEBEB">Technical Skills</li>
+              <li class="list-group-item">Establishing the purpose of the website based upon its target audience. </li>
+              <li class="list-group-item">Testing a website & identifying bugs & technical problems.</li>
+              <li class="list-group-item">Knowledge of Back-End coding. </li>
+              <li class="list-group-item">Comfortable in Unix-based systems.  </li>
+              <li class="list-group-item">Amateur Python and Bash Scripting.</li>
+              <li class="list-group-item">Adobe Illustrator</li>
+              <li class="list-group-item">HTML, CSS, SASS.</li>
+              <li class="list-group-item">Javascript, jQuery, AngularJS.</li>
+              <li class="list-group-item">Python, MongoDB, Nodejs, Express, Flask.</li>
+              <li class="list-group-item">Mac OS, Linux.</li>
             </ul>
             <p>
               Here is a more verbose version of my resume.
-              <a href="/public/docs/Paul_Diederichs_Resume.pdf" class="download" download>Download the PDF</a>
+              <a href="/public/docs/Paul_Diederichs_Resume.pdf" class="download" download>
+                <div class="container-fluid bg-purple p-1 m-2 rounded text-center">
+                  <span class="text-light">Download PDF <span class="oi oi-data-transfer-download" title="icon name" aria-hidden="true"></span></span>
+                </div>
+              </a>
             </p>
           </div>
-          <!-- ___________portfolio pieces______________-->
-          <div id="projects" class="content">
+          <!-- Projects -->
+          <div class="container">
             <h2>Projects</h2>
-            <hr />
-            <!-- ProRubs-->
-            <div class="projectCont">
-              <img src="/public/images/capProrubs.svg" alt="Pro Rubrics App" title="Pro Rubrics App">
-              <section>
-                <p>
-                  <h3>Project Name</h3>
-                  <span>&nbsp;Pro Rubrics</span>
-                  <h3>Project Type</h3>
-                  <span>&nbsp; School project</span>
-                  <h3>Project Description</h3>
-                  <span>Web Application that helps teachers grade student's work</span>
-                  <h3>Tools Used</h3>
-                  <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Javascript</li>
-                    <li>Nodejs</li>
-                    <li>Materialize</li>
-                    <li>Codeship</li>
-                    <li>Heroku</li>
-                    <li>SVG</li>
-                    <li>MongoDB</li>
-                  </ul>
-                  <h3>Demo</h3>
-                  <a href="https://brogrammers-pro-rubrics.herokuapp.com/#/" target="blank" class="demoLink">Demo</a>
-                </p>
-              </section>
+            <div class="card-deck">
+              <!-- ProRubs -->
+              <div class="card">
+                <img src="/public/images/capProrubs.svg" class="card-img-top" alt="Pro Rubrics App" title="Pro Rubrics App">
+                <div class="card-body">
+                  <h5 class="card-title">Pro Rubrics</h5>
+                  <p><span class="badge badge-warning">School Project</span></p>
+                  <p class="card-text">Web application that helps teachers grade student's work.</p>
+                </div>
+                <div class="card-footer">
+                  <small>
+                    <span class="badge badge-danger">HTML5</span>
+                    <span class="badge badge-primary">CSS3</span>
+                    <span class="badge badge-warning">Javascript</span>
+                    <span class="badge badge-success">Nodejs</span>
+                    <span class="badge badge-info">Materialize</span>
+                    <span class="badge badge-info">Codeship</span>
+                    <span class="badge badge-purple">Heroku</span>
+                    <span class="badge badge-warning">SVG</span>
+                    <span class="badge badge-success">MongoDB</span>
+                  </small>
+                </div>
+                <div class="card-footer text-center">
+                  <small><a href="https://brogrammers-pro-rubrics.herokuapp.com/#/" target="_blank" class="container-fluid p-2 m-2 rounded text-center text-purple">Demo <span class="oi oi-external-link" title="external link icon" aria-hidden="true"></span></a></small>
+                </div>
+              </div>
+              <!-- tutorTracker -->
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Tutor Tracker</h5>
+                  <p><span class="badge badge-warning">School Project</span></p>
+                  <p class="card-text">Web Application to manage tutors in a university environment.</p>
+                </div>
+                <div class="card-footer">
+                  <small>
+                    <span class="badge badge-danger">HTML5</span>
+                    <span class="badge badge-primary">CSS3</span>
+                    <span class="badge badge-pink">SASS</span>
+                    <span class="badge badge-warning">Javascript</span>
+                    <span class="badge badge-success">Nodejs</span>
+                    <span class="badge badge-info">Codeship</span>
+                    <span class="badge badge-purple">Heroku</span>
+                    <span class="badge badge-warning">SVG</span>
+                    <span class="badge badge-success">MongoDB</span>
+                  </small>
+                </div>
+                <div class="card-footer">
+                  <div class="embed-responsive embed-responsive-16by9 mb-2">
+                    <video width="320" height="240" controls>
+                     <source src="/public/video/demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+              </div>
+              <!-- LinuxSearch -->
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Linux Search</h5>
+                  <p><span class="badge badge-warning">School Project</span></p>
+                  <p class="card-text">Design Comprehensive layout.</p>
+                </div>
+                <div class="card-footer">
+                  <small><span class="badge badge-warning">Adobe Illustrator</span> <span class="badge badge-warning">SVG</span></small>
+                </div>
+                <div class="card-footer">
+                  <small>
+                    <div class="embed-responsive embed-responsive-16by9 mb-2">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/w-NcnjoCtHE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9 mb-2">
+                      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/kv5xVVcq8sc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                  </small>
+                </div>
+              </div>
             </div>
-            <!-- tutorTracker-->
-            <div class="projectCont">
-              <section>
-                <p>
-                  <h3>Project Name</h3>
-                  <span>&nbsp; Tutor Tracker</span>
-                  <h3>Project Type</h3>
-                  <span>&nbsp; School project</span>
-                  <h3>Project Description</h3>
-                  <span>Web Application to Manage tutors in a university environment</span>
-                  <h3>Tools Used</h3>
-                  <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>SASS</li>
-                    <li>Javascript</li>
-                    <li>Nodejs</li>
-                    <li>Materialize</li>
-                    <li>Codeship</li>
-                    <li>Heroku</li>
-                    <li>SVG</li>
-                    <li>MongoDB</li>
-                  </ul>
-                  <h3>Demo</h3>
-                  <video width="320" height="240" controls>
-                   <source src="/public/video/demo.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                  </video>
-                </p>
-              </section>
-            </div>
-            <!-- LinuxSearch-->
-            <div class="projectCont">
-              <section>
-                <p>
-                  <h3>Project Name</h3>
-                  <span>&nbsp; Linux Search</span>
-                  <h3>Project Type</h3>
-                  <span>&nbsp; School project</span>
-                  <h3>Project Description</h3>
-                  <span>Design Comprehensive layout</span>
-                  <h3>Tools Used</h3>
-                  <ul>
-                    <li>Adobe Illustrator</li>
-                    <li>SVG</li>
-                  </ul>
-                  <h3>Demo</h3>
+            <p></p>
+            <div class="card-deck">
+              <!-- trashBuddy -->
+              <div class="card">
+                <img src="/public/images/trashbuddy.svg" class="card-img-top" alt="Trash buddy App" title="Trash buddy App">
+                <div class="card-body">
+                  <h5 class="card-title">trashBuddy</h5>
+                  <p><span class="badge badge-warning">School Project</span></p>
+                  <p class="card-text">App to remind Orlando residents when to take out their trash.</p>
+                </div>
+                <div class="card-footer">
+                  <small>
+                    <span class="badge badge-danger">HTML5</span>
+                    <span class="badge badge-primary">CSS3</span>
+                    <span class="badge badge-warning">Javascript</span>
+                    <span class="badge badge-success">Nodejs</span>
+                    <span class="badge badge-info">Bash</span>
+                    <span class="badge badge-info">PHP</span>
+                    <span class="badge badge-info">ArcGIS API provided by Orlando</span>
+                    <span class="badge badge-info">Passportjs</span>
+                    <span class="badge badge-info">Mongoosejs</span>
+                    <span class="badge badge-success">MongoDB</span>
+                    <span class="badge badge-info">Ubuntu Server</span>
+                  </small>
+                </div>
+                <div class="card-footer text-center">
+                  <small>
+                    <div class="embed-responsive embed-responsive-16by9 mb-2">
+                      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9xUunu9z_Ik" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                  </small>
+                </div>
+              </div>
+              <!-- omniCom -->
+              <div class="card">
+                <img src="/public/images/omnicom.png" class="card-img-top" alt="omnicom App Logo" title="omnicom App Logo">
+                <div class="card-body">
+                  <h5 class="card-title">omniCom</h5>
+                  <p><span class="badge badge-warning">School Project</span></p>
+                  <p class="card-text">Web Application to make phone calls</p>
+                </div>
+                <div class="card-footer">
+                  <small>
+                    <span class="badge badge-danger">HTML5</span>
+                    <span class="badge badge-primary">CSS3</span>
+                    <span class="badge badge-pink">SASS</span>
+                    <span class="badge badge-warning">Javascript</span>
+                    <span class="badge badge-success">Nodejs</span>
+                    <span class="badge badge-info">SQLite</span>
+                    <span class="badge badge-purple">Heroku</span>
+                    <span class="badge badge-warning">SVG</span>
+                    <span class="badge badge-info">Python</span>
+                    <span class="badge badge-info">Flask</span>
+                    <span class="badge badge-info">Twilio</span>
+                  </small>
+                </div>
+                <div class="card-footer">
+                  <div class="embed-responsive embed-responsive-16by9 mb-2">
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/H6AUq3qy9GE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+              <!-- smartHouse -->
+              <div class="card">
 
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/w-NcnjoCtHE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/kv5xVVcq8sc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </p>
-
-
-              </section>
+                <div class="card-body">
+                  <h5 class="card-title">smartHouse</h5>
+                  <p><span class="badge badge-warning">School Project</span></p>
+                  <p class="card-text">Web Application to control House light and A.C</p>
+                </div>
+                <div class="card-footer">
+                  <small>
+                    <span class="badge badge-danger">HTML5</span>
+                    <span class="badge badge-warning">Javascript</span>
+                    <span class="badge badge-info">C#</span>
+                    <span class="badge badge-info">Arduino Uno</span>
+                  </small>
+                </div>
+                <div class="card-footer">
+                  <small>
+                    <div class="embed-responsive embed-responsive-16by9 mb-2">
+                      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/O0oaouz-EMY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                  </small>
+                </div>
+              </div>
             </div>
-            <!-- trashBuddy-->
-            <div class="projectCont">
-              <img src="/public/images/trashbuddy.svg" alt="trashBuddy App" title="trashBuddy App">
-              <section>
-                <p>
-                  <h3>Project Name</h3>
-                  <span>&nbsp; trashBuddy</span>
-                  <h3>Project Type</h3>
-                  <span>&nbsp; School project</span>
-                  <h3>Project Description</h3>
-                  <span>App to remind Orlando residents when to take out their trash.</span>
-                  <h3>Tools Used</h3>
-                  <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>PHP</li>
-                    <li>Bash</li>
-                    <li>ArcGIS API provided by Orlando</li>
-                    <li>JavaScript</li>
-                    <li>Nodejs</li>
-                    <li>Passportjs</li>
-                    <li>Mongoosejs</li>
-                    <li>MongoDB</li>
-                    <li>Ubuntu Server</li>
-                  </ul>
-                  <h3>Demo</h3>
-                  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9xUunu9z_Ik" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </p>
-              </section>
+            <p></p>
+            <div class="card-deck">
+              <!-- privateControl -->
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">privateControl</h5>
+                  <p><span class="badge badge-warning">School Project</span></p>
+                  <p class="card-text">Web Application to control your projects, finance, etc.</p>
+                </div>
+                <div class="card-footer">
+                  <small>
+                    <span class="badge badge-danger">HTML5</span>
+                    <span class="badge badge-warning">Javascript</span>
+                    <span class="badge badge-info">PHP</span>
+                    <span class="badge badge-info">jQuery</span>
+                  </small>
+                </div>
+                <div class="card-footer text-center">
+                  <small>
+                    <div class="embed-responsive embed-responsive-16by9 mb-2">
+                      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sA9tmn4XVL4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                  </small>
+                </div>
+              </div>
             </div>
-            <!-- omniCom-->
-            <div class="projectCont">
-              <img src="/public/images/omnicom.png" alt="omnicom App Logo" title="omnicom App Logo">
-              <section>
-                <p>
-                  <h3>Project Name</h3>
-                  <span>&nbsp; omniCom</span>
-                  <h3>Project Type</h3>
-                  <span>&nbsp; School project</span>
-                  <h3>Project Description</h3>
-                  <span>Web Application to make phone calls</span>
-                  <h3>Tools Used</h3>
-                  <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>SASS</li>
-                    <li>JavaScript</li>
-                    <li>Heroku</li>
-                    <li>SVG</li>
-                    <li>SQLite</li>
-                    <li>Python</li>
-                    <li>Flask</li>
-                    <li>Twilio</li>
-                  </ul>
-                  <h3>Demo</h3>
-                  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/H6AUq3qy9GE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </p>
-              </section>
-            </div>
-            <!-- smartHouse-->
-            <div class="projectCont">
-              <section>
-                <p>
-                  <h3>Project Name</h3>
-                  <span>&nbsp; Smart House</span>
-                  <h3>Project Type</h3>
-                  <span>&nbsp; School project</span>
-                  <h3>Project Description</h3>
-                  <span>Web Application to control House light and A.C</span>
-                  <h3>Tools Used</h3>
-                  <ul>
-                    <li>HTML5</li>
-                    <li>JavaScript</li>
-                    <li>C#</li>
-                    <li>Arduino Uno</li>
-                  </ul>
-                  <h3>Demo</h3>
-                  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/O0oaouz-EMY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </p>
-              </section>
-            </div>
-            <!-- privateControl -->
-            <div class="projectCont">
-              <section>
-                <p>
-                  <h3>Project Name</h3>
-                  <span>&nbsp; privateControl</span>
-                  <h3>Project Type</h3>
-                  <span>&nbsp; School project</span>
-                  <h3>Project Description</h3>
-                  <span>Web Application to control your projects, finance, etc.</span>
-                  <h3>Tools Used</h3>
-                  <ul>
-                    <li>HTML5</li>
-                    <li>JavaScript</li>
-                    <li>PHP</li>
-                    <li>jQuery</li>
-                  </ul>
-                  <h3>Demo</h3>
-                  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sA9tmn4XVL4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </p>
-              </section>
-            </div>
-
           </div><!-- End of portfolio pieces-->
-          </div>
+        </div>
           <!-- End belowNav -->
 
-</div>
 <!-- End Wrapper -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
 
 </html>
