@@ -85,10 +85,10 @@ nav a:nth-child(n+2):hover span {
 }
 
 .text-purple{
-  color:#800080;
+  color:#800080 !important;
 }
 .bg-purple{
-  background-color: #800080;
+  background-color: #800080 !important;
 }
 .badge-pink{
   color:#000033;
@@ -308,17 +308,21 @@ a.download:hover{
               <li class="list-group-item">Python, MongoDB, Nodejs, Express, Flask.</li>
               <li class="list-group-item">Mac OS, Linux.</li>
             </ul>
-            <p>
+          </div>
+          <!-- Download -->
+          <div class="container">
+            <h5 id="projects" class="text-center">
               Here is a more verbose version of my resume.
-              <a href="/public/docs/Paul_Diederichs_Resume.pdf" class="download" download>
-                <div class="container-fluid bg-purple p-1 m-2 rounded text-center">
+            </h5>
+            <!-- container-fluid p-1 m-2 rounded text-center -->
+            <p>
+              <a href="/public/docs/Paul_Diederichs_Resume.pdf" class="download btn bg-purple container-fluid" download>
                   <span class="text-light">Download PDF <span class="oi oi-data-transfer-download" title="icon name" aria-hidden="true"></span></span>
-                </div>
               </a>
             </p>
           </div>
           <!-- Projects -->
-          <div class="container">
+          <div class="container" >
             <h2>Projects</h2>
             <div class="card-deck">
               <!-- ProRubs -->
@@ -343,7 +347,14 @@ a.download:hover{
                   </small>
                 </div>
                 <div class="card-footer text-center">
-                  <small><a href="https://brogrammers-pro-rubrics.herokuapp.com/#/" target="_blank" class="container-fluid p-2 m-2 rounded text-center text-purple">Demo <span class="oi oi-external-link" title="external link icon" aria-hidden="true"></span></a></small>
+                  <small>
+                    <a href="https://brogrammers-pro-rubrics.herokuapp.com/#/" target="_blank" class="download btn bg-purple container-fluid text-light">
+
+                      Demo
+                      <span class="oi oi-external-link" title="external link icon" aria-hidden="true"></span>
+
+                    </a>
+                  </small>
                 </div>
               </div>
               <!-- tutorTracker -->
