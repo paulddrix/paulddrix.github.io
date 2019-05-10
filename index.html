@@ -108,6 +108,33 @@ a.download {
 a.download:hover{
   color: #800080;
 }
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .card-columns{
+    column-count: 1 !important;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .card-columns{
+    column-count: 2 !important;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .card-columns{
+    column-count: 3 !important;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .card-columns{
+    column-count: 3 !important;
+  }
+}
 
 @media print {
   /*
@@ -324,178 +351,172 @@ a.download:hover{
           <!-- Projects -->
           <div class="container" >
             <h2>Projects</h2>
-            <div class="card-deck">
+            <div class="card-columns">
               <!-- ProRubs -->
               <div class="card">
-                <img src="/public/images/capProrubs.svg" class="card-img-top" alt="Pro Rubrics App" title="Pro Rubrics App">
-                <div class="card-body">
-                  <h5 class="card-title">Pro Rubrics</h5>
-                  <p><span class="badge badge-warning">School Project</span></p>
-                  <p class="card-text">Web application that helps teachers grade student's work.</p>
-                </div>
-                <div class="card-footer">
-                  <small>
-                    <span class="badge badge-danger">HTML5</span>
-                    <span class="badge badge-primary">CSS3</span>
-                    <span class="badge badge-warning">Javascript</span>
-                    <span class="badge badge-success">Nodejs</span>
-                    <span class="badge badge-info">Materialize</span>
-                    <span class="badge badge-info">Codeship</span>
-                    <span class="badge badge-purple">Heroku</span>
-                    <span class="badge badge-warning">SVG</span>
-                    <span class="badge badge-success">MongoDB</span>
-                  </small>
-                </div>
-                <div class="card-footer text-center">
-                  <small>
-                    <a href="https://brogrammers-pro-rubrics.herokuapp.com/#/" target="_blank" class="download btn bg-purple container-fluid text-light">
+                  <img src="/public/images/capProrubs.svg" class="card-img-top" alt="Pro Rubrics App" title="Pro Rubrics App">
+                  <div class="card-body">
+                    <h5 class="card-title">Pro Rubrics</h5>
+                    <p><span class="badge badge-warning">School Project</span></p>
+                    <p class="card-text">Web application that helps teachers grade student's work.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small>
+                      <span class="badge badge-danger">HTML5</span>
+                      <span class="badge badge-primary">CSS3</span>
+                      <span class="badge badge-warning">Javascript</span>
+                      <span class="badge badge-success">Nodejs</span>
+                      <span class="badge badge-info">Materialize</span>
+                      <span class="badge badge-info">Codeship</span>
+                      <span class="badge badge-purple">Heroku</span>
+                      <span class="badge badge-warning">SVG</span>
+                      <span class="badge badge-success">MongoDB</span>
+                    </small>
+                  </div>
+                  <div class="card-footer text-center">
+                    <small>
+                      <a href="https://brogrammers-pro-rubrics.herokuapp.com/#/" target="_blank" class="download btn bg-purple container-fluid text-light">
 
-                      Demo
-                      <span class="oi oi-external-link" title="external link icon" aria-hidden="true"></span>
+                        Demo
+                        <span class="oi oi-external-link" title="external link icon" aria-hidden="true"></span>
 
-                    </a>
-                  </small>
+                      </a>
+                    </small>
+                  </div>
                 </div>
-              </div>
               <!-- tutorTracker -->
               <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Tutor Tracker</h5>
-                  <p><span class="badge badge-warning">School Project</span></p>
-                  <p class="card-text">Web Application to manage tutors in a university environment.</p>
-                </div>
-                <div class="card-footer">
-                  <small>
-                    <span class="badge badge-danger">HTML5</span>
-                    <span class="badge badge-primary">CSS3</span>
-                    <span class="badge badge-pink">SASS</span>
-                    <span class="badge badge-warning">Javascript</span>
-                    <span class="badge badge-success">Nodejs</span>
-                    <span class="badge badge-info">Codeship</span>
-                    <span class="badge badge-purple">Heroku</span>
-                    <span class="badge badge-warning">SVG</span>
-                    <span class="badge badge-success">MongoDB</span>
-                  </small>
-                </div>
-                <div class="card-footer">
-                  <div class="embed-responsive embed-responsive-16by9 mb-2">
-                    <video width="320" height="240" controls>
-                     <source src="/public/video/demo.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                    </video>
+                  <div class="card-body">
+                    <h5 class="card-title">Tutor Tracker</h5>
+                    <p><span class="badge badge-warning">School Project</span></p>
+                    <p class="card-text">Web Application to manage tutors in a university environment.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small>
+                      <span class="badge badge-danger">HTML5</span>
+                      <span class="badge badge-primary">CSS3</span>
+                      <span class="badge badge-pink">SASS</span>
+                      <span class="badge badge-warning">Javascript</span>
+                      <span class="badge badge-success">Nodejs</span>
+                      <span class="badge badge-info">Codeship</span>
+                      <span class="badge badge-purple">Heroku</span>
+                      <span class="badge badge-warning">SVG</span>
+                      <span class="badge badge-success">MongoDB</span>
+                    </small>
+                  </div>
+                  <div class="card-footer">
+                    <div class="embed-responsive embed-responsive-16by9 mb-2">
+                      <video width="320" height="240" controls>
+                       <source src="/public/video/demo.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video>
+                    </div>
                   </div>
                 </div>
-              </div>
               <!-- LinuxSearch -->
               <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Linux Search</h5>
-                  <p><span class="badge badge-warning">School Project</span></p>
-                  <p class="card-text">Design Comprehensive layout.</p>
-                </div>
-                <div class="card-footer">
-                  <small><span class="badge badge-warning">Adobe Illustrator</span> <span class="badge badge-warning">SVG</span></small>
-                </div>
-                <div class="card-footer">
-                  <small>
-                    <div class="embed-responsive embed-responsive-16by9 mb-2">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/w-NcnjoCtHE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <div class="embed-responsive embed-responsive-16by9 mb-2">
-                      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/kv5xVVcq8sc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                  </small>
-                </div>
-              </div>
-            </div>
-            <p></p>
-            <div class="card-deck">
-              <!-- trashBuddy -->
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">trashBuddy</h5>
-                  <p><span class="badge badge-warning">School Project</span></p>
-                  <p class="card-text">App to remind Orlando residents when to take out their trash.</p>
-                </div>
-                <div class="card-footer">
-                  <small>
-                    <span class="badge badge-danger">HTML5</span>
-                    <span class="badge badge-primary">CSS3</span>
-                    <span class="badge badge-warning">Javascript</span>
-                    <span class="badge badge-success">Nodejs</span>
-                    <span class="badge badge-info">Bash</span>
-                    <span class="badge badge-info">PHP</span>
-                    <span class="badge badge-info">ArcGIS API provided by Orlando</span>
-                    <span class="badge badge-info">Passportjs</span>
-                    <span class="badge badge-info">Mongoosejs</span>
-                    <span class="badge badge-success">MongoDB</span>
-                    <span class="badge badge-info">Ubuntu Server</span>
-                  </small>
-                </div>
-                <div class="card-footer text-center">
-                  <small>
-                    <div class="embed-responsive embed-responsive-16by9 mb-2">
-                      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9xUunu9z_Ik" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                  </small>
-                </div>
-              </div>
-              <!-- omniCom -->
-              <div class="card">
-                <img src="/public/images/capOC.svg" class="card-img-top" alt="omnicom App Logo" title="omnicom App Logo">
-                <div class="card-body">
-                  <h5 class="card-title">omniCom</h5>
-                  <p><span class="badge badge-warning">School Project</span></p>
-                  <p class="card-text">Web Application to make phone calls</p>
-                </div>
-                <div class="card-footer">
-                  <small>
-                    <span class="badge badge-danger">HTML5</span>
-                    <span class="badge badge-primary">CSS3</span>
-                    <span class="badge badge-pink">SASS</span>
-                    <span class="badge badge-warning">Javascript</span>
-                    <span class="badge badge-success">Nodejs</span>
-                    <span class="badge badge-info">SQLite</span>
-                    <span class="badge badge-purple">Heroku</span>
-                    <span class="badge badge-warning">SVG</span>
-                    <span class="badge badge-info">Python</span>
-                    <span class="badge badge-info">Flask</span>
-                    <span class="badge badge-info">Twilio</span>
-                  </small>
-                </div>
-                <div class="card-footer">
-                  <div class="embed-responsive embed-responsive-16by9 mb-2">
-                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/H6AUq3qy9GE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  <div class="card-body">
+                    <h5 class="card-title">Linux Search</h5>
+                    <p><span class="badge badge-warning">School Project</span></p>
+                    <p class="card-text">Design Comprehensive layout.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small><span class="badge badge-warning">Adobe Illustrator</span> <span class="badge badge-warning">SVG</span></small>
+                  </div>
+                  <div class="card-footer">
+                    <small>
+                      <div class="embed-responsive embed-responsive-16by9 mb-2">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/w-NcnjoCtHE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                      </div>
+                      <div class="embed-responsive embed-responsive-16by9 mb-2">
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/kv5xVVcq8sc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                      </div>
+                    </small>
                   </div>
                 </div>
-              </div>
+              <!-- trashBuddy -->
+              <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">trashBuddy</h5>
+                    <p><span class="badge badge-warning">School Project</span></p>
+                    <p class="card-text">App to remind Orlando residents when to take out their trash.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small>
+                      <span class="badge badge-danger">HTML5</span>
+                      <span class="badge badge-primary">CSS3</span>
+                      <span class="badge badge-warning">Javascript</span>
+                      <span class="badge badge-success">Nodejs</span>
+                      <span class="badge badge-info">Bash</span>
+                      <span class="badge badge-info">PHP</span>
+                      <span class="badge badge-info">ArcGIS API provided by Orlando</span>
+                      <span class="badge badge-info">Passportjs</span>
+                      <span class="badge badge-info">Mongoosejs</span>
+                      <span class="badge badge-success">MongoDB</span>
+                      <span class="badge badge-info">Ubuntu Server</span>
+                    </small>
+                  </div>
+                  <div class="card-footer text-center">
+                    <small>
+                      <div class="embed-responsive embed-responsive-16by9 mb-2">
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9xUunu9z_Ik" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                      </div>
+                    </small>
+                  </div>
+                </div>
+              <!-- omniCom -->
+              <div class="card">
+                  <img src="/public/images/capOC.svg" class="card-img-top" alt="omnicom App Logo" title="omnicom App Logo">
+                  <div class="card-body">
+                    <h5 class="card-title">omniCom</h5>
+                    <p><span class="badge badge-warning">School Project</span></p>
+                    <p class="card-text">Web Application to make phone calls</p>
+                  </div>
+                  <div class="card-footer">
+                    <small>
+                      <span class="badge badge-danger">HTML5</span>
+                      <span class="badge badge-primary">CSS3</span>
+                      <span class="badge badge-pink">SASS</span>
+                      <span class="badge badge-warning">Javascript</span>
+                      <span class="badge badge-success">Nodejs</span>
+                      <span class="badge badge-info">SQLite</span>
+                      <span class="badge badge-purple">Heroku</span>
+                      <span class="badge badge-warning">SVG</span>
+                      <span class="badge badge-info">Python</span>
+                      <span class="badge badge-info">Flask</span>
+                      <span class="badge badge-info">Twilio</span>
+                    </small>
+                  </div>
+                  <div class="card-footer">
+                    <div class="embed-responsive embed-responsive-16by9 mb-2">
+                      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/H6AUq3qy9GE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
               <!-- smartHouse -->
               <div class="card">
 
-                <div class="card-body">
-                  <h5 class="card-title">smartHouse</h5>
-                  <p><span class="badge badge-warning">School Project</span></p>
-                  <p class="card-text">Web Application to control House light and A.C</p>
+                  <div class="card-body">
+                    <h5 class="card-title">smartHouse</h5>
+                    <p><span class="badge badge-warning">School Project</span></p>
+                    <p class="card-text">Web Application to control House light and A.C</p>
+                  </div>
+                  <div class="card-footer">
+                    <small>
+                      <span class="badge badge-danger">HTML5</span>
+                      <span class="badge badge-warning">Javascript</span>
+                      <span class="badge badge-info">C#</span>
+                      <span class="badge badge-info">Arduino Uno</span>
+                    </small>
+                  </div>
+                  <div class="card-footer">
+                    <small>
+                      <div class="embed-responsive embed-responsive-16by9 mb-2">
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/O0oaouz-EMY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                      </div>
+                    </small>
+                  </div>
                 </div>
-                <div class="card-footer">
-                  <small>
-                    <span class="badge badge-danger">HTML5</span>
-                    <span class="badge badge-warning">Javascript</span>
-                    <span class="badge badge-info">C#</span>
-                    <span class="badge badge-info">Arduino Uno</span>
-                  </small>
-                </div>
-                <div class="card-footer">
-                  <small>
-                    <div class="embed-responsive embed-responsive-16by9 mb-2">
-                      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/O0oaouz-EMY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                  </small>
-                </div>
-              </div>
-            </div>
-            <p></p>
-            <div class="card-deck">
               <!-- privateControl -->
               <div class="card">
                 <div class="card-body">
